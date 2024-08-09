@@ -1,2 +1,233 @@
 .advantages {
+  width: 1180px;
+  height: 424px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 32px;
+  padding: 0px;
+}
+
+.section {
+  width: 1280px;
+}
+.container {
+  display: flex;
+  max-width: 1280px;
+  padding: 0 50px;
+}
+.box-a {
+  display: flex;
+  width: 1180px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.advantages-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 90px;
+  padding-right: auto;
+  padding-left: 50px;
+  margin: 0;
+  background-color: var(--dark-teal);
+  border-radius: 24px;
+  width: 716px;
+  height: 424px;
+  list-style-type: none;
+}
+
+.advantages-list > li::before {
+  content: '0' counter(li);
+}
+
+.advantages-list > li:hover::before,
+p:hover,
+hr:hover {
+  color: var(--dark-navy);
+  border-color: var(--dark-navy);
+  cursor: pointer;
+}
+
+.advantages-list > li {
+  counter-increment: li;
+  position: relative;
+}
+
+.advantages-item1 {
+  width: 292px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  padding: 0;
+}
+
+.advantages-item2 {
+  width: 292px;
+  height: 85px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  padding: 0;
+}
+
+.advantages-item3 {
+  width: 292px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  padding: 0;
+  margin-bottom: 90px;
+  margin-top: 44px;
+}
+
+.advantages-item4 {
+  width: 292px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--almost-white);
+  margin-top: 44px;
+  padding: 0;
+  margin-bottom: 90px;
+}
+
+.text {
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--almost-white);
+  font-family: 'Inter', sans-serif;
+}
+
+.text1 {
+  width: 238px;
+  height: 30px;
+}
+
+.text2 {
+  width: 292px;
+  height: 15px;
+}
+
+.text3 {
+  width: 292px;
+  height: 30px;
+}
+
+.text4 {
+  width: 292px;
+  height: 30px;
+}
+.img-yacht-interior {
+  display: flex;
+}
+
+.line-item {
+  border-radius: 18px;
+  opacity: 0.8;
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex;
+}
+
+.yacht-interior-image {
+  border-radius: 24px;
+  max-width: 432px;
+  height: 424px;
+  margin-left: 32px;
+}
+
+.yacht-img-delta {
+  border-radius: 24px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.br2 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .advantages-list {
+    padding-left: 32px;
+    width: 704px;
+    margin-left: 32px;
+  }
+  .box-a {
+    display: block;
+    width: 768px;
+  }
+
+  .yacht-interior-image {
+    max-width: 704px;
+    margin: 32px;
+  }
+
+  .yacht-img-delta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .advantages-list {
+    grid-template-columns: auto;
+    padding-top: 80px;
+    padding-left: 20px;
+    margin: 20px;
+    width: 335px;
+    height: 642px;
+  }
+  .box-a {
+    display: block;
+    width: 375px;
+  }
+
+  .advantages-item2 {
+    margin-top: 40px;
+  }
+
+  .advantages-item3 {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .advantages-item4 {
+    margin-top: 40px;
+  }
+
+  .br1 {
+    display: none;
+  }
+
+  .br2 {
+    display: block;
+  }
+
+  .yacht-interior-image {
+    min-width: 335px;
+    margin-left: 20px;
+  }
 }
